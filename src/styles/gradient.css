@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.circle {
+    width: 200px; /* Adjust the width and height of the circle */
+    height: 200px;
+    border-radius: 50%; /* Make it a circle */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 80%); /* Define the fading gradient */
+    animation: fade 3s ease-in-out infinite; /* Apply the fade animation */
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 1; /* Fully opaque at the start */
+    }
+    100% {
+      opacity: 0; /* Fully transparent at the end */
+    }
+  }
+  
+  /* Add this style to create a diffuse circle effect */
+.diffuse-circle {
+  width: 200px; /* Adjust the width and height of the circle */
+  height: 200px;
+  border-radius: 50%; /* Make it a circle */
+  background: radial-gradient(circle, rgba(159,123,217,1) 1%, rgba(95,0,150,0.7091211484593838) 56%, rgba(61,23,199,0.8547794117647058) 100%); /* Define the fading gradient */
+  position: relative; /* Set the positioning to absolute */
+  /*top: 50px; /* Adjust top position as needed */
+  /*#left: 1650px; /* Adjust left position as needed */
+  z-index: 0;
+  /*opacity: 0.9;*/
+}
+
+h3 {
+  font-size: 80px;
+  font-weight: 500;
+  font-style: bold;
+  margin: 0;
+  background: linear-gradient(to right, #EFB3E5 0%, #AB5ADA 50%, #4BBBF9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.price-box {
+  background: transparent; /* Set background to transparent */
+  border: 2px solid; /* Add a border */
+  border-image: linear-gradient(to right, #EFB3E5 0%, #AB5ADA 50%, #4BBBF9 100%); /* Set border image to linear gradient */
+  border-image-slice: 1; /* Ensure the border image covers the entire border */
+  padding: 20px; /* Add padding for text */
+  width: fit-content; /* Adjust width to fit content */
+  margin: auto; /* Center the box */
+}

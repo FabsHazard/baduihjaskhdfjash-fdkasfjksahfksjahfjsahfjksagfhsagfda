@@ -1,0 +1,53 @@
+
+.image-container {
+width: 2/3;
+}
+.image-container .flex {
+flex-wrap: wrap;
+margin-left: -4px;
+margin-right: -4px;
+}
+.image-container .w-full {
+width: 100%;
+}
+.image-container .sm\:w-1\/2 {
+width: 50%;
+}
+.image-container .py-6 {
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}
+.image-container .flex.justify-center {
+display: flex;
+justify-content: center;
+}
+.image-container .w-64 {
+width: 4rem;
+}
+.image-container .h-64 {
+height: 4rem;
+}
+.image-container .flex.items-center {
+display: flex;
+align-items: center;
+}
+.image-container .justify-center {
+justify-content: center;
+}
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease-in-out;
+}
+.image-container .w-64:hover {
+transform: scale(1.1);
+}
+
+.p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    opacity: 0.5;
+    color: white;
+}

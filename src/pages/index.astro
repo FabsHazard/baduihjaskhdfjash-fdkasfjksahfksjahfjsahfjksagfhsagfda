@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Navbar } from "../Components/Navbar";
+import { Features1 } from "../Components/Features1";
+import { Features2 } from "../Components/Features2";
+import { FeaturesDiagonal } from "../Components/FeaturesDiagonal";
+import { Divider } from "../Components/Divider";
+import { Footer } from "../Components/Footer";
+import { ScrollUpButton } from "../Components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+import { HeroMet } from "../Components/HeroMet";
+import { GetStarted } from "../Components/GetStarted";
+import { Technology } from "../Components/Technology/Technology";
+import { Tokenomics2 } from "../Components/Technology/Tokenomics2";
+import { Community } from "../Components/Community";
+import { Partnerships } from "../Components/Partnerships";
+import { NFT } from "../Components/NFT";
+
+---
+
+<Layout title="Metchain">
+  {<Navbar client:load />}
+  <HeroMet client:load />
+  <Partnerships client:load />
+  <Features1 client:load />
+  <Divider />
+
+  <GetStarted client:load />
+  <Divider />
+  <Technology client:load />
+  <Divider />
+  <Tokenomics2 client:load />
+  <Divider />
+  <NFT client:load />
+  <Divider />
+  <Community client:load />
+
+
+  <Divider />
+
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>

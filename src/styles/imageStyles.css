@@ -1,0 +1,67 @@
+/* imageStyles.css */
+
+.image-container {
+  width: 100%; /* Set the width to 100% */
+  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: 1fr; /* Display one image per row on mobile */
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(69%, 1fr));
+  gap: 6px;
+  justify-items: center; /* Center align the items horizontally */
+  align-items: center; /* Center align the items vertically */
+  text-align: center; 
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* Display one image per row on mobile */
+    align-items: center;
+    max-width: 80%;
+  }
+}
+
+.image-container-Utilities{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+}
+.image-container-Utilities img {
+  max-width: 100%; /* Adjusts the maximum width of images to fit their container */
+  height: auto;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .image-container-Utilities img {
+    max-width: 90%;
+  }
+}
+.image-section {
+  text-align: center; /* Aligns the text to the center */
+}
+
+.gray-square {
+  background-color: #1B1C32; /* Gray background */
+  border: 15px solid #222543; /* Thick black border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside the square */
+  margin: 20px auto; /* Margin for spacing */
+  text-align: center; /* Center the text */
+  display: inline-block; /* Ensure the div only takes the necessary width */
+  width: 100%;
+  height: 140px;
+}

@@ -1,0 +1,20 @@
+.circle {
+position: absolute;
+z-index: 5;
+width: 100%; /* Tamaño del círculo, ajusta según sea necesario */
+height: 400px; /* Tamaño del círculo, ajusta según sea necesario */
+border-radius: 100%; /* Hacer que el elemento sea circular */
+background-color: rgba(191, 0, 255, 0.601); /* Color del círculo */
+filter: blur(50px); /* Aplicar difuminado */
+opacity: 0.8; /* Ajustar la opacidad según prefieras */
+top: 0px; /* Posición superior del círculo */
+left: 50%; /* Posición izquierda del círculo */
+transform: translate(-50%, 100%); /* Centrar el círculo */
+animation: fadeInOut 6s infinite alternate; /* Animation properties */
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.1; }
+    50% { opacity: 0; }
+    100% { opacity: 0.1; }
+}

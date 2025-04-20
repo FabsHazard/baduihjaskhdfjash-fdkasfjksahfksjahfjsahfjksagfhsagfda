@@ -1,0 +1,124 @@
+/* Hero.css */
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+  .hero-image {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 1%;
+    left: 40%; /* Start from half of the screen */
+    width: 60%; /* Take half of the screen width */
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    /* Aplicar el efecto de círculo difuminado */
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, #ffffff);
+    -moz-mask-image: linear-gradient(to top, transparent 1%, #ffffff);
+    mask-image: linear-gradient(to top, transparent 1%, #ffffff);
+
+
+    /* Standard mask property */
+ 
+  }
+  
+  
+  .hero-content {
+    position: absolute;
+    width: 60%;
+    height: 50.74%;
+    top: 30.85%;
+    right: 15.31%;
+    bottom: 32.41%;
+    left: 10.94%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 100px;
+    font-size: 36px;
+    }
+  
+  .hero-text p {
+    margin: 0;
+  }
+  
+  .hero-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+    color: darkorchid;
+  }
+  
+  .hero-description {
+    position: absolute;
+    
+    top: 400px;
+    left: 0;
+    font-size: 25px;
+    font-weight: 300;
+    max-width: 70%; 
+  }
+  
+  /* HeroMet.css */
+
+.circle-diffuse {
+  width: 10000px; /* Ancho del círculo */
+  height: 10000px; /* Altura del círculo */
+  border-radius: 50%; /* Forma de círculo */
+  background-color: rgba(82, 15, 15, 0.5); /* Color con transparencia */
+  box-shadow: 0px 0px 20px 10px rgba(40, 4, 4, 0.5); /* Difuminado */
+  position: absolute; /* Posición absoluta para colocar al final del componente */
+  bottom: -500px; /* Posición vertical */
+  right: -500px; /* Posición horizontal */
+}
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: 90%; /* Adjust width for smaller screens */
+    /* Other adjustments as needed */
+  }
+
+  .hero-text {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+    width: 90%;
+    top: 50px;
+    /* Other adjustments as needed */
+  }
+  .hero-title {
+    font-size: 9vw; /* Adjust font size for smaller screens */
+    /* Other adjustments as needed */
+  }
+  .hero-description {
+    width: 90%;
+    font-size: 5vw;
+    top: 250px; /* Adjust font size for smaller screens */
+    /* Other adjustments as needed */
+  }
+  .buy-button {
+    background-color: #007bff;
+    color: rgb(8, 6, 6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+}

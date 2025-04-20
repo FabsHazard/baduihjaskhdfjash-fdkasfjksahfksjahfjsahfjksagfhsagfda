@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { NavbarLogo } from "../Components/NavbarLogo";
+import { HeroMetLogo} from "../Components/HeroMetLogo";
+import { NewsComponent} from "../Components/News/NewsComponent";
+import { Navbar } from "../Components/Navbar";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+---
+<Layout title="News">
+{<Navbar  client:load />}
+<NewsComponent client:load />
+
+</Layout>
