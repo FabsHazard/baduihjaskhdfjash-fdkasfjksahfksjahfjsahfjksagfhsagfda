@@ -17,6 +17,7 @@ export const Features1 = () => {
       const response = await fetch(
         "https://api.xeggex.com/api/v2/asset/getbyid/65dea6efb9f343ee794a9d68"
       );
+      
       const data = await response.json();
       const truncatedPrice = parseFloat(data.usdValue).toFixed(3);
       setPrice(truncatedPrice);
